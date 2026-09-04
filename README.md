@@ -7,7 +7,7 @@ The team's project is comprised of 2 application.
 1. A frontend UI built written in Typescript, using the React framework
 2. A backend API written in Python using the Flask framework.
 
-You'll find 2 folders, one named `frontend` and one named `backend`, where each application's source code is maintained. Your job is to use the team's [existing documentation](#frontend-development-notes) and create CI/CD pipelines to meet the teams' needs.
+In the `starter` folder, you'll find 2 folders, one named `frontend` and one named `backend`, where each application's source code is maintained. Your job is to use the team's [existing documentation](./starter/frontend/frontend-development-notes) and create CI/CD pipelines to meet the teams' needs.
 
 ## Deliverables
 
@@ -410,3 +410,11 @@ kustomize build | kubectl apply -f -
 ## License
 
 [License](LICENSE.md)
+
+## Deployed Application
+
+### Frontend
+http://a68e85262be4f4dc98c10049f31f59fc-2121078547.us-east-1.elb.amazonaws.com
+
+### Backend API
+http://ac04ad195c0134a35b6a2546f2e20768-1776377707.us-east-1.elb.amazonaws.com/movies
