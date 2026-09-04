@@ -78,5 +78,11 @@ jobs:
       - name: Install dependencies
         run: npm ci
 
+      - name: Run tests
+        run: CI=true npm test -- --watchAll=false
+
       - name: Build frontend
         run: npm run build
+
+      - name: Docker build
+        run: docker build --build-arg REACT_APP_MOVIE_API_URL=http://localhost:5000 -t frontend-ci .
